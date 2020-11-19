@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Filmlog</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="edit">
+
+  <div class="navbar-fixed">
+    <nav class="yellow darken-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo center">Filmlog</a>
+        <a href="#!"><i class="material-icons left">chevron_left</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <form class="col s12">
+
+        <div class="row edit-info">
+          <p>基本情報</p>
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="例：劇場版「鬼滅の刃」無限列車編" id="title" type="text" class="validate">
+              <label for="title">タイトル</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input placeholder="例：2020/10/16" id="date" type="text" class="validate">
+              <label for="date">公開日</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input placeholder="例：日本" id="country" type="text" class="validate">
+              <label for="country">製作国</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row edit-genre">
+          <p>ジャンル</p>
+          <div class="row">
+            <div class="col s6 m4">
+              <label>
+                <input class="with-gap" name="genre" id="genre0" type="radio">
+                <span>アニメ</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input class="with-gap" name="genre" id="genre1" type="radio">
+                <span>ドラマ</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input class="with-gap" name="genre" id="genre2" type="radio">
+                <span>恋愛</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input class="with-gap" name="genre" id="genre3" type="radio">
+                <span>コメディ</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input class="with-gap" name="genre" id="genre4" type="radio">
+                <span>アクション</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input class="with-gap" name="genre" id="genre5" type="radio">
+                <span>SF</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input class="with-gap" name="genre" id="genre6" type="radio">
+                <span>ファンタジー</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input class="with-gap" name="genre" id="genre7" type="radio">
+                <span>その他</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row edit-network">
+          <p>配信サービス</p>
+          <div class="row">
+            <div class="col s6 m4">
+              <label>
+                <input type="checkbox" id="network0" class="filled-in">
+                <span>Amazon Prime</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input type="checkbox" id="network1" class="filled-in">
+                <span>Hulu</span>
+              </label>
+            </div>
+            <div class="col s6 m4">
+              <label>
+                <input type="checkbox" id="network2" class="filled-in">
+                <span>Netflix</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row edit-staff">
+          <p>スタッフ</p>
+          <div class="row">
+            <div class="input-field col s4 m5">
+              <input placeholder="例：原作" id="role0" type="text" class="validate">
+            </div>
+            <div class="input-field col s4 m5">
+              <input placeholder="例：吾峠呼世晴" id="staff0" type="text" class="validate">
+            </div>
+            <div class="input-field col s4 m2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s4 m5">
+              <input placeholder="例：原作" id="role1" type="text" class="validate">
+            </div>
+            <div class="input-field col s4 m5">
+              <input placeholder="例：吾峠呼世晴" id="staff1" type="text" class="validate">
+            </div>
+            <div class="input-field col s4 m2">
+              <button class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">add</i></button>
+              <button class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">remove</i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row edit-cast">
+          <p>キャスト</p>
+          <div class="row">
+            <div class="input-field col s8 m10">
+              <input placeholder="例：鬼頭明里" id="cast0"" type="text" class="validate">
+            </div>
+            <div class="input-field col s4 m2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s8 m10">
+              <input placeholder="例：鬼頭明里" id="cast1"" type="text" class="validate">
+            </div>
+            <div class="input-field col s4 m2">
+                <button class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">add</i></button>
+                <button class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">remove</i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row edit-reviewer">
+          <p>レビュワー</p>
+          <div class="row">
+            <div class="input-field col s8 m10">
+              <input placeholder="例：太郎" id="reviewer0"" type="text" class="validate">
+            </div>
+            <div class="input-field col s4 m2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s8 m10">
+              <input placeholder="例：花子" id="reviewer1"" type="text" class="validate">
+            </div>
+            <div class="input-field col s4 m2">
+                <button class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">add</i></button>
+                <button class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">remove</i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row edit-submit">
+          <div class="input-field col s12 center">
+            <button class="waves-effect waves-light btn blue">登録</button>
+            <button class="waves-effect waves-light btn grey lighten-1">映画情報を削除</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <footer class="page-footer white">
+    <div class="footer-copyright white">
+      <div class="container orange-text center-align">
+      Made by <a class="orange-text text-lighten-2" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

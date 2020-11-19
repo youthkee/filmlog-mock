@@ -1,0 +1,45 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.list-content {
+  margin-top: 20px;
+}
+
+.list .btn-floating {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.edit-info .row {
+  margin-bottom: 0;
+}
+
+.edit-staff .input-field,
+.edit-cast .input-field,
+.edit-reviewer .input-field {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.detail-info .row {
+  margin-bottom: 0;
+}
+
+.detail-info .material-icons {
+  font-size: 30px;
+  vertical-align: bottom;
+}
+
+.review-content {
+  margin-top: 20px;
+}
+
+.page-footer {
+  padding-top: 0;
+}

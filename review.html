@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Filmlog</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="review">
+
+  <div class="navbar-fixed">
+    <nav class="yellow darken-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo center">Filmlog</a>
+        <a href="#!"><i class="material-icons left">chevron_left</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <form class="col s12">
+
+        <div class="row review-content">
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="0" selected>☆☆☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="4">★★★★☆</option>
+                <option value="5">★★★★★</option>
+              </select>
+              <label>評価</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">レビュー</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row edit-submit">
+          <div class="input-field col s12 center">
+            <button class="waves-effect waves-light btn blue">登録</button>
+            <button class="waves-effect waves-light btn grey lighten-1">レビューを削除</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <footer class="page-footer white">
+    <div class="footer-copyright white">
+      <div class="container orange-text center-align">
+      Made by <a class="orange-text text-lighten-2" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
